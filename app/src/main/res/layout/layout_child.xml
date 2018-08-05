@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/ripple_child"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Arusha mjini"
+        android:textColor="#424242"
+        android:gravity="center_vertical"
+        android:paddingLeft="25dp"
+        android:id="@+id/wilaya1"/>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/benjaminhosp"
+        android:scaleType="centerCrop"
+        android:id="@+id/hosp_pic"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodoma General Hospital"
+        android:textSize="25sp"
+        android:textColor="#424242"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.7"
+        android:textStyle="bold"
+        android:background="#fff"
+        android:id="@+id/hosp_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Private"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/shape_rectangle"
+        android:layout_marginTop="85dp"
+        android:id="@+id/category"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_toRightOf="@id/category"
+        android:text="Distance"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_rectangle5"
+        android:layout_marginTop="85dp"
+        android:stateListAnimator="@animator/anim"
+        android:id="@+id/dist_View"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category"
+        android:text="Services"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/shape_rectangle4"
+        android:elevation="12dp"
+        android:id="@+id/services"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/hosp_pic"
+        android:layout_above="@+id/contacts"
+        android:layout_marginTop="0dp"
+        android:id="@+id/services_recycler"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phone"
+        android:text="Contacts"
+        android:layout_marginTop="7dp"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/contacts"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email"
+        android:text="Phone:"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/phone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/phone"
+        android:layout_alignBaseline="@id/phone"
+        android:text="+255654387693"
+        android:autoLink="phone"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
+        android:layout_marginStart="3dp"
+        android:textStyle="italic"
+        android:id="@+id/phone_no"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:text="Email:"
+        android:layout_marginTop="1dp"
+        android:textSize="15sp"
+        android:layout_marginStart="9dp"
+        android:id="@+id/email"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/email"
+        android:layout_alignBaseline="@id/email"
+        android:autoLink="email"
+        android:text="BenjaminHospital@hotmail.com"
+        android:layout_marginTop="1dp"
+        android:textSize="15sp"
+        android:layout_marginStart="3dp"
+        android:textStyle="italic"
+        android:id="@+id/email_no"/>
+</RelativeLayout>
